@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Ad-Block Universal",
+    "description": "Blocks ads on every website",
+    "version": "0.0.1",
+    "author": "Phinton Dev",
+    "icons": {
+        "16": "logo.png",
+        "48": "logo.png",
+        "128": "logo.png"
+    },
+    "browser_action": {
+        "default_title": "Ad-Block Universal"
+    },
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "http://*/",
+        "https://*/"
+
+    ],
+    "background": {
+        "scripts": [
+            "blocked_ads.js",
+            "background.js"
+        ]
+    }
+}
